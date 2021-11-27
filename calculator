@@ -1,0 +1,37 @@
+package com.java;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter opereation");
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+        int o = sc.nextInt();
+        System.out.println("Enter 1st value");
+        int a= sc.nextInt();
+        System.out.println("Enter 2nd value");
+        int b= sc.nextInt();
+        int result = 0;
+        if (o==1){
+            result = a+b;
+        }
+        else if(o==2){
+            result = a-b;
+        }
+        else if (o==3){
+            result= a*b;
+        }
+        else if(o==4){
+            result = a/b;
+        }
+        else{
+            System.out.println("Wrong input!!");
+        }
+        System.out.println(result);
+    }
+}
